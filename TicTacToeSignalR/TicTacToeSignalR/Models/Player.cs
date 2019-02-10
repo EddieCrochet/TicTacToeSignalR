@@ -12,5 +12,8 @@ namespace TicTacToeSignalR.Models
 
         //Gets or sets the opponent player. Set when player clicks find opponent in UI.
         public Player Opponent { get; set; }
+
+        //value indicates whether user is playing or not. Set on runtime.
+        public bool IsPLaying { get; set; }
     }
 }
