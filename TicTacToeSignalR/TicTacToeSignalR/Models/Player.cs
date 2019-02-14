@@ -15,5 +15,20 @@ namespace TicTacToeSignalR.Models
 
         //value indicates whether user is playing or not. Set on runtime.
         public bool IsPLaying { get; set; }
+
+        //indicated is player is waiting on move
+        public bool WaitingForMove { get; set; }
+
+        //indicates if searn=rching for an oppoonent or not
+        public bool IsSearchingOpponent { get; set; }
+
+        //time when user registered
+        public DateTime RegisterTime { get; set; }
+
+        //display of the Character's "image" if the user chooses to do so
+        public string Image { get; set; }
+
+        //connects player with connection Id in game
+        public string ConnectionId { get; set; }
     }
 }
