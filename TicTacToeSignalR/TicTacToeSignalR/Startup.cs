@@ -55,7 +55,7 @@ namespace TicTacToeSignalR
 
             app.UseSignalR(routes =>
             {
-                routes.MapHub<Hub>("GameHub");
+                routes.MapHub<Hub>("/GameHub");
             });
 
             app.UseMvc(routes =>
